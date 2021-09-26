@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "data_challenge"
+version = "0.1.0"
+description = "Data challenge for Bootcamp Data Engineer Carrefour"
+authors = ["flaviomarcilio <flaviomarciliodeoliveira@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+tweepy = "^3.10.0"
+fastapi = "^0.68.1"
+pymongo = {extras = ["srv"], version = "^3.12.0"}
+uvicorn = {extras = ["standard"], version = "^0.15.0"}
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+flake8 = "^3.9.2"
+black = "^21.9b0"
+isort = "^5.9.3"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
